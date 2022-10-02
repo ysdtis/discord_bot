@@ -71,8 +71,8 @@ async def on_message(message):
 async def reply(message):
     if message.content.startswith('/l'):  #誰かが/lと発言すると指定したワードでリプライ対象の語録を学習する。
 
-    reply = f'{message.author.mention} 呼んだ？' # 返信メッセージの作成
-    await message.channel.send(reply) # 返信メッセージを送信
+        reply = f'{message.author.mention} 呼んだ？' # 返信メッセージの作成
+        await message.channel.send(reply) # 返信メッセージを送信
 
 # Botの起動とDiscordサーバーへの接続
 client.run(os.environ['TOKEN'])
